@@ -11,18 +11,14 @@ function getDomain() {
   let adj = ["great", "big"];
   let noun = ["jogger", "racoon"];
   let extension = [".com", ".net", ".io", ".us", ".cl"];
-  let printDomain = () => {
-    for (let i = 0; i < pronoun.length; i++) {
-      for (let j = 0; j < adj.length; j++) {
-        for (let k = 0; k < noun.length; k++) {
-          for (let l = 0; l < extension.length; l++) {
-            str += pronoun[i] + adj[j] + noun[k] + extension[l] + "<br>";
-          }
+  for (let i = 0; i < pronoun.length; i++) {
+    for (let j = 0; j < adj.length; j++) {
+      for (let k = 0; k < noun.length; k++) {
+        for (let l = 0; l < extension.length; l++) {
+          str += pronoun[i] + adj[j] + noun[k] + extension[l] + "<br>";
         }
       }
     }
-    return str;
-  };
-  return printDomain();
+  }
+  return str;
 }
-console.log(getDomain());
